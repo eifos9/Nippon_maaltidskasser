@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nippon opret en profil">
+    <meta name="keywords" content="Måltidskasse, Billige måltidskasser, Billig måltidskasse">
+    <title>Nippon 1person</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="script/script2.js" defer></script>
+</head>
+
+<body>
+
+    <!--Header -->
+    <header>
+        <div class="topnav">
+            <div class="left"> 
+            <div class="dropdown">
+                <button class="dropbtn">Måltidskasser
+                </button>
+                <div class="dropdown-content">
+                    <a href="404side.html">Abonnement</a>
+                    <a href="1person.html">1 person</a>
+                    <a href="404side.html">2 personer</a>
+                    <a href="404side.html">3 personer</a>
+                    <a href="404side.html">4 personer</a>
+                    <a href="404side.html">5 personer</a>
+                    <a href="404side.html">6 personer</a>
+                </div>
+
+            </div>
+            <div class="dropdown">
+                    <button class="dropbtn">Om Nippon
+                    </button>
+                <div class="dropdown-content">
+                    <a href="404side.html">Oprindelse</a>
+                    <a href="404side.html">Kontakt</a>
+                </div>
+            </div>
+        </div>
+
+            <div class="logo_container">
+                    <a href="index.html"><img src="img/ikon.png" alt="logo" id="logo"></a>
+            </div>
+
+            
+        <div class="right">
+            <div class="dropdown">
+                <button class="dropbtn">Guide
+                </button>
+                <div class="dropdown-content">
+                    <a href="404side.html">Sådan fungerer det</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Opskrifter
+                </button>
+                <div class="dropdown-content">
+                    <a href="rester.html">Brug dine rester</a>
+                </div>
+            </div>
+        </div> 
+
+
+            <div class="header_icons">
+
+                <a href="404side.html">
+                    <button class="header_kurv">
+                        <div>
+                            <img src="img/kurv.png" alt="kurv" id="img_kurv">
+                        </div>
+                    </button>
+                </a>
+
+                <a href="opret_profil.html">
+                    <button class="header_bruger">
+                     <div>
+                        <img src="img/user.png" alt="bruger" id="img_bruger">
+                     </div>
+                    </button>
+                </a>
+         </div>
+        </div>
+
+    </header>
+
+    <!--Header slut-->
+    <!--Indtast oplysninger section-->
+
+    <!--Main start-->
+
+    <main>
+    
+    <section>
+            <div class="beigepil_opret"></div>
+            <div class="rombe_container_opret">
+                <img class="rombe_moerkeblaa_down_opret" src="img/halvrombe_beige.png" alt="pil">
+            </div>
+    </section>
+
+    <section>
+            <div class="broedkrumme_container">
+                <h6 id="h6_opret1">Måltidskasse 1 person</h6>
+                <img class="opret_pil" src="img/pil_moerkeblaa.png" alt="pil">
+                <h6 id="h6_opret2">Opret profil</h6>
+                <img class="opret_pil" src="img/pil_moerkeblaa.png" alt="pil">
+                <h6 id="h6_opret3">Tilvælg abbonement</h6>
+                <img class="opret_pil" src="img/pil_moerkeblaa.png" alt="pil">
+                <h6 id="h6_opret4">Godkend betaling</h6>
+                <img class="opret_pil" src="img/pil_moerkeblaa.png" alt="pil">
+                <h6 id="h6_opret5">Betaling</h6>
+            </div>
+    </section>
+
+    <h1 class="h1_opret_profil">Opret profil hos Nippon</h1>
+    <h3 class="h3_opret_profil">Du skal oprette en profil for at kunne foretage dit køb</h3>
+
+
+    <!--Form container section-->
+
+    <section>    
+    <!--Left colum-->
+
+        <h3 class="indtast_oplysninger">Indtast dine personlige oplysninger</h3>
+
+        <div class="form-container">
+            <div class="left-column">
+
+            <div class="fornavn_efternavn">
+                <div class="label_tekst_special">
+                    <label for="fornavn">Fornavn <span class="required">*</span></label>
+                    <input type="text" id="julia" name="fornavn" placeholder="Julia" required>
+                </div>
+                <div class="label_tekst_special2">  
+                    <label for="efternavn" class="label_tekst">Efternavn <span class="required">*</span></label>
+                    <input type="text" id="efternavn" name="efternavn" placeholder="Hansen" required>
+                </div>
+            </div>
+
+                <label for="adresse" class="label_tekst">Adresse (leveringsadresse) <span class="required">*</span></label>
+                <input type="text" id="adresse" name="adresse" placeholder=" Jægergårdsgade 3a" required>
+            
+            <div class="fornavn_efternavn">
+                <div class="label_tekst_special">
+                    <label for="postnummer" class="label_tekst">Postnummer <span class="required">*</span></label>
+                    <input type="text" id="postnummer" name="postnummer" placeholder="8000" required>
+                </div>
+                <div class="label_tekst_special2">
+                    <label for="by" class="label_tekst">By <span class="required">*</span></label>
+                    <input type="text" id="by" name="by" placeholder="Aarhus" required>
+                </div>
+            </div>
+
+            </div>
+        
+    <!--Right column-->
+
+            <div class="right-column">
+                <div class="lille_tekst_container">
+                    <div class="telefon_tekst">
+                        <label for="telefonnummer" class="label_tekst">Telefonnummer <span class="required">*</span></label>
+                        <input type="text" class="kontaktformation_telefon" name="telefonnummer" placeholder="+45 55 30 54 60" required>
+                    </div>
+                    <p class="lille_tekst">Hvorfor beder vi om dit telefonnummer? Hvis vi har spørgsmål til din ordre - ikke andet.</p>
+                </div>
+                    <label for="email" class="label_tekst">Email-adresse <span class="required">*</span></label>
+                    <input type="email" class="kontaktformation" name="email" placeholder=" Julia.HanSolo@gmail.com" required>
+                    <p class="lille_tekst2">Hvorfor beder vi om din e-mailadresse? Både fordi det fungerer som dit brugernavn til din profil, og  så vi har sted at sende dine kvitteringer til, når du har bestilt varer og/eller abonnement fra os.</p>
+                
+                    <label for="adgangskode" class="label_tekst">Adgangskode <span class="required">*</span></label>
+                    <input type="password" class="kontaktformation" name="adgangskode" placeholder=" *******" required>
+            </div>
+        </div>
+    </section>
+       
+        <div class="knap_container_opret">
+            <a href="404side.html">
+                <button type="submit" class="orange_knap_opret">Næste</button>
+            </a>
+        </div>
+
+</main>
+
+<!--Main slut-->
+
+</body>
+</html>

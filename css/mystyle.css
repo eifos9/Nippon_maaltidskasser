@@ -1,0 +1,1413 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*-- HEADER --*/
+
+.topnav {
+    display: flex;
+    background-color: #040639;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 85px;
+    box-shadow: 0px 6px 10px rgba(4, 6, 57, 0.4); 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 13;
+    left: 0;
+}
+
+/*-- kurv og bruger ikoner header--*/
+
+.header_icons {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    margin-right: -80%;
+}
+
+/*-- ikonernes buttons --*/
+
+.header_kurv,
+.header_bruger {
+    color: white;
+    background-color: #040639;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 6px 1rem 0 1rem;
+}
+
+/*-- stilen på ikonerne --*/
+
+#img_kurv {
+    width: 30px;
+    height: auto;
+}
+
+#img_bruger {
+    width: 25px;
+    height: auto;
+}
+
+/*-- opdeling af venstre og højre side af header --*/
+
+.left {
+    display: flex;
+}
+
+.right {
+    display: flex;
+    margin-right: 15em;
+}
+
+/*-- navigationslinks --*/
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/*--viser submenuerne --*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*-- dropdown--*/
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    color: white ;
+    background-color: #040639;
+    font-family: inherit;
+    font-weight: 200;
+    margin-left: 7em;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+/*--dropdown content--*/
+
+.dropdown-content {
+    color: #F3E9D2;
+    justify-content: center;
+    display: none;
+    position: absolute;
+    background-color: #F3E9D2;
+    margin-left: 7em;
+    border-radius: 5%;
+}
+
+/*--dropdown content links--*/
+
+.dropdown-content a {
+    font-size: 14px;
+    font-weight: 300;
+    float: none;
+    color: #040639;
+    text-decoration: none;
+    padding: 10px 16px;
+    display: block;
+    text-align: left;
+}
+
+/*--effekt når man holder musen over dropdown menu links--*/
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #040639;
+    color: white;
+}
+
+
+/* --- FOOTER --- */
+footer {
+    background-color: #040639;
+    color: white;
+    height: auto;
+}
+
+.h6_footer {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16pt;
+    font-weight: 300;
+    padding: 75px 0 30px 0;
+}
+
+.p_footer {
+    font-size: 11pt;
+    line-height: 30px;
+    font-weight: 200;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.kontakt_container {
+    width: 28em;
+}
+
+.kontakt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ugedage {
+    margin: 0 0 0 20px;
+    font-weight: 200;
+}
+
+.vertikal_linje {
+    border: 1px solid #FF6634;
+    height: auto;
+    margin: 35px 0 0 0;
+}
+
+.foelg_os {
+    display: flex;
+    justify-content: space-between;
+    width: 12em;
+    margin: 8em 0 0 0;
+}
+
+.some {
+    height: 30px;
+}
+
+.nippon_eats {
+    padding: 40px 0 40px 50px;
+}
+
+
+/*-- LOGO --*/
+
+#logo {
+    width: 110px;
+    position: absolute;
+    margin-left: 25px;
+    margin-top: -12px;
+    z-index: 12;
+}
+
+
+/*-- FORSIDE --*/
+
+/* --- Main --- */
+/* --- Headings og Paragraph --- */
+/* --- Displaytekst oven på big photo --- */
+.h1_1 {
+    font-size: 38pt;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    margin: 20% 0 0 0;
+    text-align: center;
+}
+
+/* --- h1 layout med flex --- */
+.h1_container {
+    display: flex;
+    justify-content: center;
+}
+
+/* --- Overskrifter til "1 person måltidskasse" og "6 personer måltidskasse" --- */
+.h2_1 {
+    color: white;
+    font-size: 16pt;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 0 0 6em;
+}
+
+/* --- Tekst over og under måltidskasser 1-6 personer --- */
+.h3_1 {
+    text-align: center;
+    padding: 5em 0 5em 0;
+    color: #040639;
+    font-size: 16pt;
+}
+
+/* --- Guide overskrifter under ikoner --- */
+.h4_1 {
+    text-align: center;
+    color: #040639;
+    line-height: 50pt;
+}
+
+/* --- Paragraphs / brødtekst ved 1 person måltidskasse og 6 personer måltidskasse  --- */
+.p_1 {
+    color: white;
+    font-size: 11pt;
+    font-weight: 200;
+    line-height: 30px;
+}
+
+/* --- Sectionsfarver --- */
+.blaa {
+    height: auto;
+    background-color: #040639;
+}
+
+.beige {
+    background-color: #FAF3E3;
+}
+
+.hvid {
+    background-color: white;
+}
+
+/* --- Big photo --- */
+.img_container {
+    position: relative;
+}
+
+.big_foto_1 {
+    width: 100%;
+    height: auto;
+}
+
+/* --- Bestil-knap oven på big photo --- */
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.knap_center {
+    display: flex;
+    justify-content: center;
+}
+
+.orange_knap_big_foto {
+    width: 285px;
+    height: 48px;
+    background-color: #FF6634;
+    color: white;
+    border: none;
+    position: absolute;
+    margin: 38% 0 0 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16pt;
+    font-weight: 300;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Hover-effekt på Bestil-knap --- */
+.orange_knap_big_foto:hover {
+    background-color: #040639 ;
+    color: #FFFFFF;
+}
+
+/* --- Mørkeblå romber --- */
+.rombe_moerkeblaa_up {
+    height: 140px;
+    position: absolute;
+    margin: -4em 0 0 0;
+}
+
+.rombe_moerkeblaa_down {
+    height: 140px;
+    position: absolute;
+    margin: -5em 0 0 0;
+}
+
+/* --- Om 1 person måltidskasse --- */
+.person1 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10em 0 10em 0;
+}
+
+.om_maaltidskassen {
+    width: 700px;
+    margin: 0 4em 0 0;
+}
+
+/* --- Måltidskasser 1-6 personer --- */
+.orange_boks {
+    width: 100%;
+    height: auto;
+    background-color: #FF6634;
+    margin: -2em 0 -2em 0;
+}
+
+/* --- Tekst oven på sushi-billeder --- */
+.antal_p {
+    
+    font-size: 16pt;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.antal_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 12em;
+    position: absolute;
+    z-index: 12;
+    text-align: center;
+}
+
+/* --- Sushi-billeder --- */
+.sushi {
+    border: #FF6634 7px solid;
+    width: 13em;
+    height: 12em;
+    object-fit: cover;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sushi_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* --- Lille orange rombe ved sushi-billeder --- */
+.rombe_orange_mini {
+    height: 4em;
+    position: absolute;
+    padding: 0 0 0 1%;
+}
+
+.rombe_orange_mini_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- z-index'er på sushi-billeder og lille orange rombe (layout) --- */
+/* --- s er for sushi, r er for rombe --- */
+.s1 {
+    z-index: 11;
+}
+
+.s2 {
+    z-index: 9;
+}
+
+.s3 {
+    z-index: 7;
+}
+
+.s4 {
+    z-index: 5;
+}
+
+.s5 {
+    z-index: 3;
+}
+
+.s6 {
+    z-index: 1;
+}
+
+#r1 {
+    z-index: 10;
+}
+
+#r2 {
+    z-index: 8;
+}
+
+#r3 {
+    z-index: 6;
+}
+
+#r4 {
+    z-index: 4;
+}
+
+#r5 {
+    z-index: 2;
+}
+
+/* --- Om 6 personer måltidskasse container --- */
+.person6 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10em 0 5em 0;
+}
+
+/* --- Bestil-knap ved 6 personer måltidskasse --- */
+.orange_knap_person6 {
+    width: 285px;
+    height: 48px;
+    background-color: #FF6634;
+    color: white;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16pt;
+    font-weight: 300;
+    margin: 0 0 4em 0;
+}
+
+.orange_knap_container {
+    display: flex;
+    justify-content: center;
+}
+
+/* --- Hover-effekt på Bestil-knap --- */
+.orange_knap_person6:hover {
+    opacity: 90%;
+}
+
+/* --- Guide --- */
+/* --- Overskrift over figurer --- */
+.h3_rombe {
+    font-size: 17pt;
+    font-weight: 300;
+    padding: 4em 0 0 0;
+    color: #040639;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h3_rombe_1 {
+    font-size: 17pt;
+    font-weight: 300;
+    color: #040639;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+/* --- Rombefigur med orange kant --- */
+.rombe {
+    height: 100px;
+}
+
+.rombe_container {
+    display: flex;
+    justify-content: center;
+}
+
+/* --- Pile rundt om rombe --- */
+.pil {
+    width: 70px;
+    margin: 0 0 0 2em;
+}
+
+.pil_venstre {
+    width: 70px;
+    transform: scaleX(-1);
+    margin: 0 2em 0 0;
+}
+
+/* --- Container til figurer --- */
+.pile_rombe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 3em 0;
+}
+
+/* --- Guide overskrift / "Sådan fungerer det" --- */
+.h3_guide {
+    display: flex;
+    justify-content: center;
+    color: #040639;
+    font-size: 16pt;
+    padding: 3em 0 3em 0;
+}
+
+/* --- Guide containere --- */
+.nippon_guide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+
+.nippon_guide_container {
+    display: flex;
+    justify-content: center;
+    line-height: 20pt;
+    padding: 0 0 4em 0;
+}
+
+/* --- Guide-ikoner --- */
+.ikoner3 {
+    height: 200px;
+    margin-bottom: 10%;
+}
+
+/* --- Trin 1-3 i guide --- */
+.guide_tal {
+    font-size: 26pt;
+}
+
+/* --- Guide-brødtekst --- */
+.p_nippon_guide {
+    color: #040639;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* --- Læs mere-knap under guide --- */
+.orange_knap_guide {
+    width: 285px;
+    height: 48px;
+    background-color: #FF6634;
+    color: white;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16pt;
+    font-weight: 300;
+    margin: 0 0 5em 0;
+    padding: 10px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Hover-effekt på Læs mere-knap --- */
+.orange_knap_guide:hover {
+    background-color: #040639 ;
+    color: #FFFFFF;
+}
+
+
+/*--UNDERSIDE 1 PERSON--*/
+
+/*--baggrundsbillede--*/
+
+.h1_2 {
+    font-size: 38pt;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    margin: 6em;
+}
+
+.img_container_2 {
+    position: relative;
+}
+
+.big_foto_2 {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.h1_container_2
+{
+    display: flex;
+    justify-content: center;
+}
+
+/*--blå sektion--*/
+
+.blaa_2 {
+    height: 750px;
+    background-color: #040639;
+}
+
+.rombe_moerkeblaa_down_2 {
+    height: 140px;
+    position: absolute;
+    margin: 4em 0 0 0;
+}
+
+.rombe_container_2 {
+    display: flex;
+    justify-content: center;
+}
+
+/*--beige sektion--*/
+
+.beige_2 {
+    background-color: #FAF3E3;
+}
+
+.h3_2 {
+    text-align: center;
+    padding: 7em 0 7em 0;
+    color: #040639;
+    font-size: 16pt;
+}
+
+/* grid med æg */
+
+.grid-container_2 {
+    display: grid;
+    grid-template-columns: repeat(4, auto); 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #FAF3E3;
+}
+
+.grid-item_2 {
+    margin-top: -20%;
+    text-align: center; 
+    background-color: #FAF3E3;
+
+}
+
+.grid-item_2 img {
+    width: 20rem; 
+    height: auto; 
+    display: block; 
+    background-color: #FAF3E3;
+}
+
+
+.beige_2_3
+{
+    background-color: #FAF3E3;
+    height: 160px;
+    margin: -2em 0 0 0;
+}
+
+.rombe_beige_down_2 {
+    height: 140px;
+    margin-top: 5em; 
+}
+
+.rombe_container_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.container2 {
+    margin: 3%;   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 1%;
+    column-gap: 5%;
+    padding: 3%;
+}
+
+.item2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white 
+}
+
+.item2 img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* tekst under beige pil section */
+
+.h3_2_2 {
+    text-align: center;
+    padding: 7em 0 2em 0;
+    color: #040639;
+    font-size: 16pt;
+}
+
+.under_overskrift_2 {
+    font-size: 11pt;
+    font-weight: 300;
+    margin-right: 1%;
+    justify-content: center;
+    display: flex;
+}
+
+.under_overskrift_2_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.blaakurv {
+    max-width: 2%;
+}
+
+
+/* kurv knapper*/
+
+
+.kurv_button button.minus_gyudon, button.minus_epi, 
+button.minus_gyoza, button.minus_katsu, button.minus_miso, 
+button.minus_poke, button.minus_okon, button.minus_tonkatsu, button.minus_tsukune,
+.kurv_button button.plus_gyudon, button.plus_epi, 
+button.plus_gyoza, button.plus_katsu, button.plus_miso,
+button.plus_poke, button.plus_okon, button.plus_tonkatsu, button.plus_tsukune {
+    background-color: #ff6634;
+    color: #ffffff;
+    font-size: 10pt;
+    border: none;
+    padding: 13.5px 18px;
+    cursor: pointer;
+    margin: -4%;
+}
+
+.lillekurv {
+    height: 90%;
+    width: 90%;
+    border-radius: 10%;
+}
+
+.kurv {
+    background-color: #FF6634;
+    height: 3em;
+    width: auto;
+    border-radius: 5%;
+    padding: 1%;
+}
+
+.kurv_button {
+    position: relative; 
+    margin-top: -4em;
+    margin-left: 8%;
+    max-height: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.kurv_button button {
+    border-radius: 15%;
+    background-color: #ff6634;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.kurv_button .antal_gyudon, .antal_epi, .antal_gyoza, .antal_katsu,
+ .antal_miso, .antal_poke, .antal_okon, .antal_tonkatsu, .antal_tsukune {
+    background-color: #ff6634;
+    padding: 11px 18px 13px 18px;
+    color: #ffffff;
+    border-radius: 15%;
+}
+
+.kurv_button button.kurv {
+    margin-left: 5%;
+    font-size: 10pt;
+    padding: 1% 1%;
+}
+
+/* beige section */
+
+.rombe_container_2_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.rombe_beige_down {
+    height: 140px;
+    position: absolute;
+    margin-top: -1%;
+}
+
+.beige2 {
+    background-color: #FAF3E3;
+    height: 3em;
+    padding: 1.2%;
+    margin-top: 8%;
+}
+
+/* allergener section */
+
+.under_overskrift_2_2 {
+    font-size: 14pt;
+    font-weight: 300;
+    margin-right: 1%;
+    margin-top: 4%;
+    justify-content: center;
+    display: flex;
+}
+
+.allergener_container {
+    display: flex;
+    margin: 4% 10% 2% 10%;
+    justify-content: space-between;
+}
+  
+.allergen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; 
+}
+  
+.allergen img {
+    width: 100px; 
+    margin-bottom: 30%;
+}
+
+.allergener_container_2 {
+    display: flex;
+    margin: 4% 10% 2% 10%;
+    justify-content: center;
+    gap: 7.5%;
+}
+
+  /* blå section pil */
+
+.rombe_container_2_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.rombe_blaa_down_2_3 {
+    height: 140px;
+    position: absolute;
+    margin-top: -1%;
+}
+
+.blaa_2_3 {
+    background-color: #040639;
+    height: 7em;
+    padding: 1.2%;
+    margin-top: 8%;
+}
+
+.h3_bestil {
+    color: #ffffff;
+    font-weight: 450;
+    font-size: 16pt;
+    text-align: center;
+    margin-top: 3%;
+}
+
+  /* orange gå til bestilling knap*/
+
+  .orange_knap_container_2 {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    margin-top: 10%;
+}
+
+.orange_knap_guide_2 {
+    width: 360px;
+    height: 48px;
+    background-color: #FF6634;
+    color: white;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16pt;
+    font-weight: 300;
+    margin: 0 0 3em 0;
+    padding: 10px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.orange_knap_guide_2:hover {
+    background-color: #040639 ;
+    color: #FFFFFF;
+}
+
+/* tekst under knap*/
+
+.under_overskrift_2_3 {
+font-size: 15pt;
+text-align: center;
+font-weight: 300;
+line-height: 1.5em;
+}
+
+.minmening {
+text-align: center;
+font-size: 15pt;
+font-weight: 450;
+margin-top: 3%;
+margin-bottom: 5%;
+}
+
+/* UNDERSIDE RESTER*/
+
+/* tekst styling */
+.h1_container_3 {
+    font-size: 20pt;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    margin: 10em 5em 0 13em;
+    text-align: center;
+}
+
+.h2_3 {
+    position: absolute;
+    font-size: 32pt;
+    font-weight: 400;
+    color: #FFFFFF;
+    justify-content: center;
+    margin: 30% 0 0 35%;
+}
+
+.h6_3 {
+    font-size: 14pt;
+    width: 55%;
+    padding: 7em 0;
+    line-height: 2em;
+    text-align: center;
+    font-weight: 300;
+}
+
+.h3_3 {
+    color: #040639;
+    text-align: center;
+    font-size: 16pt;
+    font-weight: 450;
+    margin-top: 2%;
+}
+
+.h4_3 {
+    text-align: center;
+    color: #040639;
+    font-size: 22pt;
+    font-weight: bold;
+    padding-bottom: 5%;
+}
+
+.h4_3_3 {
+    text-align: center;
+    color: #040639;
+    font-size: 16pt;
+}
+
+li {
+    color: #040639;
+}
+
+.p_opskrift {
+    color: #040639;
+    text-align: center;
+    padding-bottom: 7em;
+}
+
+/* bigphoto */
+.big_foto3 {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.main_3 {
+    background-color: #040639;
+}
+
+/* Knap */
+
+.orange_knap_container_3 {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.orange_knap_guide_3 {
+    width: 360px;
+    height: 48px;
+    background-color: #FF6634;
+    color: white;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16pt;
+    font-weight: 300;
+    margin: 0 0 5em 0;
+    padding: 10px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.orange_knap_guide_3:hover {
+    background-color: #040639 ;
+    color: #FFFFFF;
+}
+
+
+/* pil nummer 1 blå underside 3 */
+.blaapil {
+    background-color: #040639;
+    height: 5%;
+    padding: 1.2%;
+}
+
+.rombe_container_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.rombe_moerkeblaa_down_3 {
+    height: 140px;
+    position: absolute;
+    margin-top: -1%;
+}
+
+/* pil nummer 2 beige underside 3 */
+.rombe_container_3_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.rombe_moerkeblaa_down_3_2 {
+    height: 140px;
+    position: absolute;
+    margin-top: -1%;
+}
+
+.beigepil3 {
+    background-color: #FAF3E3;
+    height: 5em;
+    padding: 1.2%;
+}
+
+/* infographic underside 3 */
+.infographic {
+    width: 73%;
+    margin-bottom: 5em;
+}
+
+.infographic_container {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+/* Container styling underside 3 */
+.top_container {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.saadan_container {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    padding: 7em 0 5em 0;
+}
+
+.obskrift_container {
+    background-color: #FFFFFF;
+    width: 50%;
+    line-height: 5.5em;
+    margin-bottom: 1em;
+}
+
+.obskrift_container_baggrund {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+#li_2 {
+    line-height: 2;
+}
+
+.p_opskrift_container {
+    background-color: #FFFFFF;
+}
+
+/* UNDERSIDE 404 SIDE */
+.h2_4 {
+    display: flex;
+    margin-left: 30%;   
+    margin-top: 20%;
+    z-index: 20;
+    font-size: 20pt;
+    color:#040639;
+}
+
+.p_4 {
+    font-weight: 100;
+    margin-top: 1.5%;
+    margin-left: 30%;
+}
+
+.h1_4 {
+    margin-left: 30%;   
+    margin-top: 4%;
+    display: flex;
+    z-index: 20;
+    font-size: 32pt;
+    color:#040639;
+}
+
+.figur {
+    height: 30%;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: -23%;
+
+}
+
+.logo_container_404 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+#pil_1_404 {
+    margin-top: 4%;
+    margin-right: 5%;
+    transform: scaleX(-1);
+    height: 2em;
+}
+
+#pil_2_404 {
+    margin-top: 4%;
+    margin-left: 5%;
+    height: 2em;
+}
+
+#logo_404 {
+    height: 10em;
+}
+
+.pointing_container_404
+{
+    margin-top: -4%;
+    display: flex;
+    justify-content: end;
+    margin-right: 30%;
+    margin-bottom: -6%;
+}
+
+#pointing_404 {
+    height: 16em;
+    transform: rotate(40deg); 
+    margin-bottom: -6%;
+}
+
+/* UNDERSIDE OPRET PROFIL */
+
+/* knap */
+.knap_container_opret {
+    display: flex;
+    justify-content: center;
+}
+
+.orange_knap_opret{
+    width: 360px;
+    height: 48px;
+    background-color: #FF6634;
+    color: white;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16pt;
+    font-weight: 300;
+    margin: 2em 0 5em 0;
+    padding: 10px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.orange_knap_opret:hover {
+    background-color: #040639 ;
+    color: #FFFFFF;
+}
+
+
+/* brødkrumme*/
+.broedkrumme_container h6,
+.broedkrumme_container img {
+    display: inline-block;
+    vertical-align: middle; 
+    margin-left: 1%; 
+    align-items: center;
+}
+
+.broedkrumme_container h6 {
+    font-size: 11pt;
+    font-weight: 300;
+    margin-top: -4%;
+}
+
+.broedkrumme_container {
+    display: flex;
+    justify-content: center;
+    margin-top: -1em;
+}
+
+.opret_pil {
+    height: 1.5em;
+    transform: scaleX(-1);
+    margin-top: -4%;
+}
+
+#h6_opret2 {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+.rombe_moerkeblaa_down_opret {
+    position: absolute;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    margin-top: -6%;
+}
+
+.beigepil_opret {
+    background-color: #FAF3E3;
+    height: 18em;
+}
+
+.rombe_container_opret {
+    display: flex;
+    justify-content: center;
+}
+
+/* tekst*/
+
+.h1_opret_profil {
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+.h3_opret_profil {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-weight: 300;
+}
+
+.indtast_oplysninger {
+    margin-top: 4%;
+    margin-left: 20%;
+}
+
+/* form container*/
+
+.form-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .left-column {
+    flex: 1;
+    padding: 2% 2% 0 20%;
+  }
+
+  .right-column {
+    flex: 1;
+    padding: 2% 20%;
+    margin-top: -3.5%;
+  }
+  
+  label,
+  input {
+    height: 10%;
+    display: block;
+  }
+
+  input {
+    border: 1px solid #dcd9d9;
+    border-radius: 5px;
+  }
+
+  label
+  {
+    margin-top: 5%;
+  }
+
+/* stjerne*/
+  .required {
+    color: red; 
+  }
+  
+
+/* farve på placeholders*/
+
+  ::placeholder {
+    color: #b9b5b5; 
+  }
+
+/* styling af tekst og felternes layout*/
+
+  .label_tekst_special {
+    font-size: 8pt;
+    display: flex;
+    flex-direction: column;
+    gap: 25%;
+  }
+
+  .label_tekst_special2 {
+    font-size: 8pt;
+    display: flex;
+    flex-direction: column;
+    gap: 25%;
+    margin-left: 2%;
+  }
+
+  .label_tekst {
+    font-size: 8pt;
+  }
+
+
+  .fornavn_efternavn {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fornavn_tekst {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #julia, #efternavn, #postnummer, #by {
+    padding: 5%;
+  }
+
+  #adresse {
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+    padding: 0.5%;
+    padding-right: 51.5%;
+  }
+
+ .kontaktformation {
+    padding: 0.5%;
+    padding-right: 50.8%;
+    margin-top: 2%;
+  }
+
+ .kontaktformation_telefon {
+    padding: 7%;
+ }
+
+ .lille_tekst_container {
+    display: flex;
+    flex-direction: row;
+ }
+
+ .lille_tekst {
+    font-size: 7pt;
+    font-weight: 300;
+    margin-left: 4%;
+    margin-top: 3%;
+ }
+ 
+ .lille_tekst2 {
+    font-size: 7pt;
+    font-weight: 300;
+    margin-top: 2%;
+ }
+
+ .telefon_tekst {
+    display: flex;
+    flex-direction: column;
+    gap: 25%;
+    max-width: 50%;
+ }
